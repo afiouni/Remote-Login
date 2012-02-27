@@ -1,0 +1,23 @@
+Summary:
+Display a login form on external sites or other directories or subdirectories
+
+Full description:
+Displays an elgg login box only without other page elements. Useful for displaying a login form in a subfolder or on a page in an external site or even a local file :)
+
+Upon logout, this plugin will also redirect the user to the page where the user originally did login.
+
+To use this plugin, simply add the following anywhere in a page to display the login box at this location:
+
+<script src="http://example.com/pg/remotelogin/load.js" type="text/javascript"></script>
+
+If you would like to add scripts to your html header or would like to style the box differently, following are the different scripts and styles that this plugin loads for the login box to work properly. Therefore, you can replace the stylesheet with your own or remove the jQuery loading if it is already loaded in your page.
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" ></script>
+
+<script src="http://example.com/pg/remotelogin/remoteajax.js" type="text/javascript" ></script>
+
+<link rel="stylesheet" href="http://example.com/pg/remotelogin/style.css" type="text/css" />
+
+<div id="remotelogin"></div>
+
+<script src="http://example.com/pg/remotelogin/run.js" type="text/javascript" ></script>
